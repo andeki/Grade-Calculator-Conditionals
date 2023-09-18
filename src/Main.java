@@ -1,14 +1,16 @@
 import java.util.Scanner;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
+        //prompts user for input
         System.out.println("Input grade:");
         System.out.print("__%: ");
+        //run scanner
         double grade = s.nextDouble();
 
+        //conditionals, if else-ing every condition
+        //more than or equal to represent [ ] math symbols
         if (grade >= 92) {
             System.out.println("Your grade is an A");
         } else if (grade >= 89) {
@@ -35,6 +37,7 @@ public class Main {
             System.out.println("Error: likely entered a negative number or invalid input to be graded.");
         }
 
+        //modulo to ensure the user is not confused by 89s, 79s, or 69s
         if (grade % 10 == 9)
         {
             System.out.println("Grades ending in 9s qualify for traditionally associated above grade.");
