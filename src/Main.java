@@ -38,7 +38,7 @@ public class Main {
         }
 
         //modulo to ensure the user is not confused by 89s, 79s, or 69s
-        if (grade % 10 == 9)
+        if (grade % 10 == 9 && grade < 99)
         {
             System.out.println("Grades ending in 9s qualify for traditionally associated above grade.");
         }
